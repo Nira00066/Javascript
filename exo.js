@@ -188,7 +188,7 @@ function objetexo13() {
       ville: "Bayonne",
     },
   ];
-  for 
+ 
 //   filter 
   
 }
