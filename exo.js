@@ -143,7 +143,6 @@ function tabexo11() {
   console.log(moyenne);
 }
 
-
 function objetexo12() {
   const personne = {
     nom: "Jean",
@@ -188,9 +187,8 @@ function objetexo13() {
       ville: "Bayonne",
     },
   ];
- 
-//   filter 
-  
+
+  //   filter
 }
 
 function funexo1() {
@@ -234,3 +232,27 @@ function funexo4() {
 }
 
 const doublerArrow = (n) => n * 2;
+
+function deepexo1() {
+  const person = {
+    name: "Alice",
+    age: 30,
+    address: {
+      city: "Paris",
+      zip: "75015",
+    },
+  };
+
+  const perso2 = { ...person };
+  perso2.address.city = "bayonne";
+
+  console.log(person.address.city);
+  console.log(perso2.address.city);
+
+
+const persoProfond = JSON.parse(JSON.stringify(person));
+persoProfond.address.city ='Lyon';
+
+console.log(person.address.city);
+
+}
